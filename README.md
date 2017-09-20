@@ -8,7 +8,7 @@
 ### Figure1: Open chromatin scale with genome size.
 * **data**: GS_chromatin.txt, Maher_study_chromatin.txt
 * **script**: code/Figure1_open_chromatin_GS.Rmd
-* **source**: The data used to make this figure is from following studies: [Rodgers-Melnick et al.] 2016(https://www.ncbi.nlm.nih.gov/pubmed/27185945), [Wang et al. 2017](https://www.ncbi.nlm.nih.gov/pubmed/28263319), [Qiu et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27250572), [Zhang et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/22110044), [Burgess et al. 2017](http://www.biorxiv.org/content/early/2017/07/24/165787), [Maher et al. 2017](http://www.biorxiv.org/content/early/2017/07/24/167932)
+* **source**: The data used to make this figure is from following studies: [Rodgers-Melnick et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27185945), [Wang et al. 2017](https://www.ncbi.nlm.nih.gov/pubmed/28263319), [Qiu et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27250572), [Zhang et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/22110044), [Burgess et al. 2017](http://www.biorxiv.org/content/early/2017/07/24/165787), [Maher et al. 2017](http://www.biorxiv.org/content/early/2017/07/24/167932)
 
 ### Figure2: Pattern of adaptive substitutions and genome size.
 * **data**: ???
