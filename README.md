@@ -3,9 +3,9 @@
 
 
 ### Figure1: Open chromatin scale with genome size.
-Data: GS_chromatin.txt & Maher_study_chromatin.txt
-Script:
-Source:
+* Data: GS_chromatin.txt, Maher_study_chromatin.txt
+* Script:
+* Source:
 
 
 ### Figure3: Arabidopsis and maize significant GWAS hits as a function of gene distance.
