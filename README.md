@@ -1,4 +1,4 @@
-## AJB_review: this folder is used to prepare for a review of "On the Nature of Things" serial for AJB
+### AJB_review: this is the repo for perspective **Adaptation in plant genomes: bigger isn’t better, but it's probably different** for American Journal of Botany "On the Nature of Things" serial
 
 # General Idea 
 The idea for this paper is basically based on [Jeff's JGI talk](https://www.youtube.com/watch?v=aXLuWruOmO4)
