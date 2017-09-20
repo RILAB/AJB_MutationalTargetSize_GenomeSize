@@ -1,0 +1,17 @@
+ID	Genome_Mb	Open_chromatin_Intergenic	Open_chromatin_Exon	Total_Exon_length	Open_chromatin_Exon_normalized_total_exon_length	Species	Tissue	Study	Genome_Gb
+Maize_shoot_Rodgers-Melnick_2016	2730	0.783	0.035	124454524	0.028	Maize	Shoot	Rodgers-Melnick_etal_2016	2.73
+Maize_root_Rodgers-Melnick_2016	2730	0.812	0.029	124454524	0.023	Maize	Root	Rodgers-Melnick_etal_2016	2.73
+Gossypium_hirsutum_fiber_Wang_2017	2400	0.420	0.203	149625841	0.136	Cotton	Fiber	Wang_etal_2017	2.40
+Gossypium_hirsutum_leaf_Wang_2017	2400	0.310	0.245	149625841	0.164	Cotton	Leaf	Wang_etal_2017	2.40
+Solanum_lycopersicum_fruit_Qiu_2016	1000	0.260	0.230	41478987	0.554	Tomato	Fruit	Qiu_etal_2016	1.00
+Solanum_lycopersicum_break_stage_Qiu_2016	1000	0.220	0.240	41478987	0.579	Tomato	Fruit	Qiu_etal_2016	1.00
+Oryza_sativa_seedling_Zhang_2012	500	0.423	0.166	82430594	0.201	Rice	Seedling	Zhang_etal_2012	0.50
+Oryza_sativa_callus_Zhang_2012	500	0.445	0.173	82430594	0.210	Rice	Callus	Zhang_etal_2012	0.50
+Z.mays_Burgess_2017	2730	0.181	0.179	124454524	0.144	Maize	Leaf	Burgess_etal_2017	2.73
+S.bicolor_Burgess_2017	750	0.209	0.219	93535343	0.234	Sorghum	Leaf	Burgess_etal_2017	0.75
+S.italica_Burgess_2017	530	0.206	0.253	92574418	0.273	Millet	Leaf	Burgess_etal_2017	0.53
+B.distachyon_Burgess_2017	360	0.127	0.216	105119141	0.205	Brachypodium	Leaf	Burgess_etal_2017	0.36
+Arabidopsis_Maher_2017	160	0.127	0.063	54305826	0.116	Arabidopsis	Root	Maher_etal_2017	0.16
+Rice_Maher_2017	500	0.306	0.048	82430594	0.058	Rice	Root	Maher_etal_2017	0.50
+Medicago_Maher_2017	480	0.293	0.078	85410250	0.091	Medicago	Root	Maher_etal_2017	0.48
+Tomato_Maher_2017	1000	0.504	0.113	41478987	0.272	Tomato	Root	Maher_etal_2017	1

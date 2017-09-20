@@ -12,6 +12,6 @@
 
 
 ### Figure3: Arabidopsis and maize significant GWAS hits as a function of gene distance.
-* Data: 1001_arabidopsis_GWAS_tophit_closest_gene_distance, Wallace_etal_2014_GWAS_hits_AGPv2FGS_closest_gene_distance
+* Data: Maize_Arabidopsis_GWAS_hits.txt, 1001_arabidopsis_GWAS_tophit_closest_gene_distance, Wallace_etal_2014_GWAS_hits_AGPv2FGS_closest_gene_distance
 * Script: code/Figure3_AJB_review_GWAShits_gene_distance.Rmd
 * Source: [maize Curated NAM-GWAS results download from Panzea](http://cbsusrv04.tc.cornell.edu/users/panzea/download.aspx?filegroupid=14), [Arabdiopsis GWAS top hits download from AraGWAS](https://aragwas.1001genomes.org/#/top-associations)
