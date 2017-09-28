@@ -9,7 +9,7 @@
 * **script**: code/Figure3_AJB_review_GWAShits_gene_distance.Rmd
 * **source**: [maize Curated NAM-GWAS results download from Panzea](http://cbsusrv04.tc.cornell.edu/users/panzea/download.aspx?filegroupid=14), [Arabdiopsis GWAS top hits download from AraGWAS](https://aragwas.1001genomes.org/#/top-associations)
 
-### Figure2: Open chromatin scale with genome size.
+### Figure2: Open chromatin and genome size.
 * **data**: GS_chromatin.txt, Maher_study_chromatin.txt
 * **script**: code/Figure1_open_chromatin_GS.Rmd
 * **source**: The data used to make this figure is from following studies: [Rodgers-Melnick et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27185945), [Wang et al. 2017](https://www.ncbi.nlm.nih.gov/pubmed/28263319), [Qiu et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27250572), [Zhang et al. 2012](https://www.ncbi.nlm.nih.gov/pubmed/22110044), [Burgess et al. 2017](http://www.biorxiv.org/content/early/2017/07/24/165787), [Maher et al. 2017](http://www.biorxiv.org/content/early/2017/07/24/167932)
