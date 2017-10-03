@@ -1,5 +1,6 @@
 ---
-title: "Figure3_AJB_review_GWAShits_gene_distance"
+title: "Figure1_GWAShits_distance_gene"
+author: "Wenbin Mei"
 output: html_notebook
 ---
 
@@ -18,7 +19,7 @@ newdata <- data %>%
 fill <- "#4271AE"
 lines <- "#1F3552"
 
-pdf("Figure3_GWAShits_distance_gene.pdf", width=8, height=5)
+pdf("Figure1_GWAShits_distance_gene.pdf", width=8, height=5)
 arab <- ggplot(newdata, aes(x = GWAS_hits_distance_gene)) +
         geom_density(colour = lines, fill = fill,
                  size = 1) +

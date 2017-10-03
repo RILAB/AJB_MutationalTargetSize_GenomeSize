@@ -2,9 +2,7 @@
 title: "Alpha vs. genome size"
 author: "Stetter"
 date: '2017'
-output:
-  html_document: default
-  pdf_document: default
+output: html_notebook
 ---
 
 ```{r setup, include=FALSE}
@@ -52,5 +50,5 @@ aplot <- ggplot(alpha_raw, aes(x=log(genome_1C_mb,10),
   labs(colour = "Genus",size=expression(paste(N[e]))) 
 
 aplot
-ggsave("../figure/Figure2.png",plot = aplot,width = 12)
+ggsave("../figure/Figure3_alpha_GS.png",plot = aplot,width = 12)
 ```
