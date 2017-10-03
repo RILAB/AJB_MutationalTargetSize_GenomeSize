@@ -13,6 +13,7 @@ library(scales)
 
 GS_chromatin <- read.table("~/Documents/Github/AJB_MutationalTargetSize_GenomeSize/data/Maher_study_chromatin.txt", header=TRUE)
 GS_chromatin <- filter(GS_chromatin,Genome_feature !="Total_non_exonic")
+GS_chromatin <- filter(GS_chromatin,Genome_feature !="Intron")
 
 pdf("Figure2_open_chromatin_GS.pdf", width=10, height=5)
 
@@ -21,7 +22,7 @@ plot.entire_chromatin <- ggplot(GS_chromatin, aes(x=Genome_Mb, y=Chromatin_size,
       scale_x_continuous(name = "Genome Size (Mb)", breaks = seq(0, 10000, by = 200)) +
       scale_y_continuous(name = "Open Chromatin Size (Mb)", breaks = seq(0, 25, by = 5), limits = c(0,25)) +
       geom_smooth(method=lm, se=FALSE, fullrange=TRUE) +
-      scale_shape_manual(values=c(0, 3, 16, 17)) +
+      scale_shape_manual(values=c(0, 3, 16, 17, 5)) +
       scale_color_brewer(palette="Dark2") +
       theme(axis.line.x = element_line(size=0.5, colour = "black"),
             axis.line.y = element_line(size=0.5, colour = "black"),
