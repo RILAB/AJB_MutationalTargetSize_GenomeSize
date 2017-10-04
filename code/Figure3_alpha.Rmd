@@ -33,12 +33,12 @@ shapes <- replace(shapes,shapes==5,15)  # Lactuca box
 myshapes$shapes <- shapes
 
 aplot <- ggplot(alpha_raw, aes(x=log(genome_1C_mb,10), 
-                               y=derived_alpha, 
-                               color=genus,size=Ne)) +
-  geom_point() + 
+                               y=derived_alpha)) +
+ geom_smooth(data=alpha_raw,aes(x=log(genome_1C_mb,10),y=derived_alpha),method = "lm", se = FALSE,color='grey',size=1.5)+
+  geom_point(aes(color=genus,size=Ne)) + 
   scale_size_continuous(range = c(4, 18))+ 
   scale_x_continuous(breaks = seq(2, 5.5, by = 0.5),
-                     limits = c(2,5.5)) + 
+                     limits = c(2,5)) + 
   scale_y_continuous(breaks = seq(0, .6, by = 0.1)) + 
   theme_classic() + 
   theme(legend.position = c(0.9, 0.5),
@@ -52,5 +52,5 @@ aplot <- ggplot(alpha_raw, aes(x=log(genome_1C_mb,10),
   geom_abline(intercept=0.958,slope=-0.250,color='limegreen',size=1.5)
 
 aplot
-ggsave("../figure/Figure3_alpha_GS.png",plot = aplot,width = 12)
+ggsave("../figure/Figure3_alpha_GS.png",plot = aplot,width = 12.5,height = 8)
 ```
