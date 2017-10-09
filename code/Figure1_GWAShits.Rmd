@@ -10,7 +10,7 @@ library(grid)
 library(tidyverse)
 library(scales)
 
-data <- read.table("~/Documents/Github/AJB_MutationalTargetSize_GenomeSize/data/1001_arabidopsis_GWAS_tophit_closest_gene_distance", header=FALSE)
+data <- read.table("../data/1001_arabidopsis_GWAS_tophit_closest_gene_distance", header=FALSE)
 data$GWAS_hits_distance_gene <- abs(data$V9)
 
 newdata <- data %>% 
@@ -19,7 +19,7 @@ newdata <- data %>%
 fill <- "#4271AE"
 lines <- "#1F3552"
 
-pdf("Figure1_GWAShits_distance_gene.pdf", width=8, height=5)
+pdf("../figure/Figure1_GWAShits_distance_gene.pdf", width=8, height=5)
 arab <- ggplot(newdata, aes(x = GWAS_hits_distance_gene)) +
         geom_density(colour = lines, fill = fill,
                  size = 1) +
@@ -43,7 +43,7 @@ arab <- arab + geom_vline(xintercept = 661, size = 1, colour = "#FF3721",
 
 
 ### Maize use GWAS hits relative distance to AGPv2 FGS
-data <- read.table("~/Documents/Github/AJB_MutationalTargetSize_GenomeSize/data/Wallace_etal_2014_GWAS_hits_AGPv2FGS_closest_gene_distance", header=FALSE)
+data <- read.table("../data/Wallace_etal_2014_GWAS_hits_AGPv2FGS_closest_gene_distance", header=FALSE)
 data$GWAS_hits_distance_gene <- abs(data$V9)
 
 newdata <- data %>% 
@@ -75,7 +75,7 @@ maize <- maize + geom_vline(xintercept = 7372, size = 1, colour = "#FF3721",
 
 fill <- c("#40b8d0", "#b2d183")
 
-GWAS_hits <- read.table("~/Documents/Github/AJB_MutationalTargetSize_GenomeSize/data/Maize_Arabidopsis_GWAS_hits.txt", header=TRUE)
+GWAS_hits <- read.table("../data/Maize_Arabidopsis_GWAS_hits.txt", header=TRUE)
 
 GWAS_hits_distribution <- ggplot(GWAS_hits, aes(y=Percentage, x=Species, fill=Position)) +
   geom_bar(stat="identity") +

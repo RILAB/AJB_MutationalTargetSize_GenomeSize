@@ -11,11 +11,11 @@ library(cowplot)
 library(tidyverse)
 library(scales)
 
-GS_chromatin <- read.table("~/Documents/Github/AJB_MutationalTargetSize_GenomeSize/data/Maher_study_chromatin.txt", header=TRUE)
+GS_chromatin <- read.table("../data/Maher_study_chromatin.txt", header=TRUE)
 GS_chromatin <- filter(GS_chromatin,Genome_feature !="Total_non_exonic")
 GS_chromatin <- filter(GS_chromatin,Genome_feature !="Intron")
 
-pdf("Figure2_open_chromatin_GS.pdf", width=10, height=5)
+pdf("../figure/Figure2_open_chromatin_GS.pdf", width=10, height=5)
 
 plot.entire_chromatin <- ggplot(GS_chromatin, aes(x=Genome_Mb, y=Chromatin_size, color=Genome_feature, shape=Genome_feature)) +
       geom_point(size=3, stroke=1.5) + 
@@ -36,7 +36,7 @@ plot.entire_chromatin <- ggplot(GS_chromatin, aes(x=Genome_Mb, y=Chromatin_size,
             panel.grid.minor = element_blank(),
             panel.border = element_blank(), panel.background = element_blank())
 
-GS_chromatin <- read.table("~/Documents/Github/AJB_MutationalTargetSize_GenomeSize/data/GS_chromatin.txt", header=TRUE)
+GS_chromatin <- read.table("../data/GS_chromatin.txt", header=TRUE)
 GS_chromatin=mutate(GS_chromatin,nonexonic=1-Open_chromatin_Exon)
 cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
