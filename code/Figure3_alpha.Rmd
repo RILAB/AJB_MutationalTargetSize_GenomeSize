@@ -50,10 +50,10 @@ aplot <- ggplot(alpha_raw, aes(x=log(genome_1C_mb,10),
        y = expression(alpha),
        colour = "Genus",size=expression(paste(N[e]))) +
   # Add phylogenetically corrected regression line
-  geom_abline(intercept=0.958,slope=-0.250,color='limegreen',size=1.5)
+  geom_abline(intercept=1.299,slope=-0.378,color='limegreen',size=1.5)
 
 aplot
-#ggsave("../figure/Figure3_alpha_GS.png",plot = aplot,width = 12.5,height = 8)
+ggsave("../figure/Figure3_alpha_GS.png",plot = aplot,width = 12.5,height = 8)
 
 ```
 ### Get ggplot colors
