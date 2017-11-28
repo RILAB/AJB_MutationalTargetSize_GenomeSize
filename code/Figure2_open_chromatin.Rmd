@@ -17,7 +17,7 @@ GS_chromatin <- filter(GS_chromatin,Genome_feature !="Intron")
 
 pdf("../figure/Figure2_open_chromatin_GS.pdf", width=10, height=5)
 
-plot.entire_chromatin <- ggplot(GS_chromatin, aes(x=Genome_Mb, y=Chromatin_size, color=Genome_feature, shape=Genome_feature)) +
+plot.entire_chromatin <- ggplot(GS_chromatin, aes(x=Genome_Mb, y=Chromatin_size, color=Genome_feature)) +
       geom_point(size=3, stroke=1.5) + 
       scale_x_continuous(name = "Genome Size (Mb)", breaks = seq(0, 10000, by = 200)) +
       scale_y_continuous(name = "Open Chromatin Size (Mb)", breaks = seq(0, 25, by = 5), limits = c(0,25)) +
