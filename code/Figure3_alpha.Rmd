@@ -53,7 +53,7 @@ aplot <- ggplot(alpha_raw, aes(x=log(genome_1C_mb,10),
   theme(axis.text=element_text(size=28),axis.title.x=element_text(size=28,face="bold"))
 
 aplot
-ggsave("../figure/Figure3_alpha_GS.png",plot = aplot,width = 14,height = 8)
+ggsave("../figure/Figure3_alpha_GS.pdf",plot = aplot,width = 14,height = 8,dpi = 400)
 
 ```
 ### Get ggplot colors
@@ -75,11 +75,11 @@ ggplot(heli, aes(x=genome_1C_mb,y=derived_alpha)) +
   geom_point(aes(size=Ne),color=ggplotColours(n=12)[4]) + 
   scale_size_continuous(range = c(4, 18))+ 
   theme(text = element_text(face="bold",size = 18),
-        axis.ticks.length=unit(3,"mm"),
-        axis.title.y = element_text(size = 24,face='bold')) + 
+        axis.ticks.length=unit(3,"mm")) + 
   labs(x = "Genome size [Mb]", 
        y = expression(alpha),
-       colour = "Genus",size=expression(paste(N[e]))) 
+       colour = "Genus",size=expression(paste(N[e]))) +
+  theme(axis.text=element_text(size=24),axis.title=element_text(size=28,face="bold"),text=element_text(size=24))
   # Add phylogenetically corrected regression line
 
 
@@ -96,11 +96,11 @@ ggplot(pinus, aes(x=genome_1C_mb,y=derived_alpha)) +
   geom_point(aes(size=Ne),color=ggplotColours(n=12)[8]) + 
   scale_size_continuous(range = c(4, 18))+ 
   theme(text = element_text(face="bold",size = 18),
-        axis.ticks.length=unit(3,"mm"),
-        axis.title.y = element_text(size = 24,face='bold')) + 
+        axis.ticks.length=unit(3,"mm")) + 
   labs(x = "Genome size [Mb]", 
        y = expression(alpha),
-       colour = "Genus",size=expression(paste(N[e]))) 
+       colour = "Genus",size=expression(paste(N[e]))) +
+  theme(axis.text=element_text(size=24),axis.title=element_text(size=28,face="bold"),text=element_text(size=24))
   # Add phylogenetically corrected regression line
 
 
