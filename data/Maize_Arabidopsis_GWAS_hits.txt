@@ -1,5 +1,5 @@
 Species	SNPs	Percentage	Position
 Maize	8515	22	Genic
-Maize	30043	78	Non-genic
+Maize	30043	78	Nongenic
 Arabidopsis	4897	75	Genic
-Arabidopsis	1611	25	Non-genic
+Arabidopsis	1611	25	Nongenic
