@@ -45,9 +45,9 @@ aplot <- ggplot(alpha_raw, aes(x=log(genome_1C_mb,10),
         axis.ticks.length=unit(3,"mm"),
         axis.title.y = element_text(size = 34,face='bold')) + 
     guides(colour = guide_legend(override.aes = list(size=7))) +
-  labs(x = expression(log[10]("Genome size [Mb]")), 
+  labs(x = expression(log[10]("Genome size (Mb)")), 
        y = expression(alpha),
-       colour = "Genus",size=expression(paste(N[e]))) +
+       colour = "Genus",size=expression(italic(paste(N[e])))) +
   # Add phylogenetically corrected regression line
   geom_abline(intercept=1.299,slope=-0.378,color='limegreen',size=1.5) +
   theme(axis.text=element_text(size=28),axis.title.x=element_text(size=28,face="bold"))
